@@ -108,8 +108,8 @@ Seeking an entry-level **Software Development Engineer (SDE)** role where I can 
 ## ⚡ How to Run Locally
 
 ```bash
-git clone https://github.com/Hajirakulsum003/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Hajirakulsum003/hajira_portfolio.git
+cd hajira_portfolio
 open index.html
 ```
 
