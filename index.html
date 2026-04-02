@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hajira Kulsum | Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #0f172a; color: #e5e7eb; line-height: 1.6; overflow-x: hidden; }
+    a { color: #38bdf8; text-decoration: none; }
+    section { padding: 80px 10%; opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+    section.show { opacity: 1; transform: translateY(0); }
+    h1, h2 { color: #f8fafc; }
+    h2 { margin-bottom: 30px; font-size: 2rem; }
+
+    /* Hero */
+    .hero { min-height: 100vh; display: flex; align-items: center; opacity: 1; transform: none; }
+    .hero-content { max-width: 750px; animation: fadeIn 1.2s ease; }
+    .hero h1 { font-size: 3.2rem; }
+    .hero span { color: #38bdf8; }
+    .hero p { margin: 20px 0; font-size: 1.1rem; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+    .btn { display: inline-block; padding: 12px 28px; background: #38bdf8; color: #020617; border-radius: 10px; font-weight: 600; margin-right: 15px; transition: transform .3s, box-shadow .3s; }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(56,189,248,0.4); }
+
+    /* Cards */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .card { background: #020617; padding: 28px; border-radius: 18px; box-shadow: 0 15px 30px rgba(0,0,0,0.45); transition: transform .4s, box-shadow .4s; }
+    .card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+    .card h3 { color: #38bdf8; margin-bottom: 10px; }
+
+    /* Skills */
+    .skills span { display: inline-block; margin: 8px; padding: 8px 16px; background: #020617; border-radius: 20px; font-size: .9rem; transition: background .3s, transform .3s; }
+    .skills span:hover { background: #38bdf8; color: #020617; transform: translateY(-3px); }
+
+    /* Timeline */
+    .timeline { border-left: 3px solid #38bdf8; padding-left: 30px; }
+    .timeline-item { margin-bottom: 30px; }
+
+    footer { text-align: center; padding: 30px; background: #020617; }
+
+    .social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #020617;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.icon.linkedin {
+  background: #0a66c2;
+}
+
+.icon.github {
+  background: #171515;
+}
+
+.icon:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 15px 30px rgba(56,189,248,0.6);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .social-icons {
+    justify-content: center;
+  }
+}
+.icon.gmail {
+  background: #eac935;
+}
+
+
+  </style>
+</head>
+<body>
+  <header style="position:fixed;top:0;left:0;width:100%;background:#020617;z-index:1000;box-shadow:0 5px 20px rgba(0,0,0,0.4);">
+    <nav style="max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px 10%;">
+      <h3 style="color:#38bdf8;">Hajira Kulsum</h3>
+      <div>
+        <a href="#home" style="margin:0 12px;">Home</a>
+        <a href="#skills" style="margin:0 12px;">Skills</a>
+        <a href="#projects" style="margin:0 12px;">Projects</a>
+        <a href="#experience" style="margin:0 12px;">Experience</a>
+        <a href="#contact" style="margin:0 12px;">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero" style="padding-top:140px;">
+    <div class="hero-content">
+      <h1>Hajira Kulsum</h1>
+      <h3><span>Aspiring Software Engineer</span> • Full Stack • Cloud Enthusiast</h3>
+      <p>Results-driven Computer Science undergrad with experience in full-stack development and cloud-based solutions. 
+Skilled in Java, Python, Django, React, and AWS with strong fundemental’s in Data structures, OOP, and Databases. 
+Proven ability to build scalable web apps and solve real-world problems through efficient code. Seeking to leverage 
+technical and collaborative skills as an SDE at a fast-paced, innovative tech company.</p>
+      <div>
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="resume.pdf" class="btn" download>Download CV</a>
+    </div>
+     <div class="social-icons">
+  <a href="https://www.linkedin.com/in/hajira-kulsum257"
+     target="_blank"
+     aria-label="LinkedIn"
+     class="icon linkedin">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://github.com/Hajirakulsum003"
+     target="_blank"
+     aria-label="GitHub"
+     class="icon github">
+    <i class="fab fa-github"></i>
+  </a>
+   <a href="mailto:hajirakulsum257@gmail.com" class="icon gmail">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+<!-- Font Awesome Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>SKILLS</h2>
+    <div class="skills">
+      <span>Java</span><span>Python</span><span>React</span><span>Django</span><span>Node.js</span><span>AWS</span>
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span><span>DSA</span><span>OOP</span><span>JavaScript</span> <!--<span>cloud</span><span>JavaScript</span><span>JavaScript</span><span>JavaScript</span><span>JavaScript</span><span>JavaScript</span><span>JavaScript</span><span>JavaScript</span><span>JavaScript</span><span>JavaScript</span><span>JavaScript</span> -->
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card"><h3>Real-Time Pollution Monitoring</h3><p> Designed and implemented an IoT-based system 
+to monitor air, water and soil quality parameters in real time using sensors, Python for backend and a Raspberry Pi. 
+Collected, processed, and visualized pollution data on a cloud dashboard (Blynk) to enable continuous environmental 
+monitoring and data-driven insights..</p></div>
+      <div class="card"><h3>Digital Cinema Ticket Booking</h3><p>Developed an end-to-end encrypted online ticket booking system.
+Built a Java-based web application using Servlets and JSP featuring secure user authentication, seat selection, booking 
+management, and database-driven transaction handling.</p></div>
+      <div class="card"><h3>Secure Internet Banking</h3><p>PHP & MySQL application with authentication and encrypted transactions.</p></div>
+      <div class="card"><h3>eBay Automation</h3><p>Python & Selenium automation for 20+ e-commerce workflows.</p></div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>MY Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Java Full Stack Intern – Cranes Varsity</h3>
+        <p>- Developed responsive web modules using Java, HTML, CSS, and JavaScript.<br>
+- Built scalable Java Servlets and JSP application’s following OOP principles and MVC design.<br>
+- Focused on performance, scalability, and real-world application development.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>AWS Cloud Trainee – VTU</h3>
+        <p>- Gained hands-on experience with AWS core services: EC2, S3, IAM, VPC, RDS.<br>
+- Designed and implementedscalable, secure andcost-effectivecloud solutions using real-timecloud infrastructure.<br>
+- Certified with an A+ grade under the Government of Karnataka’s innovation program.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <p><strong>B.E. Information Science & Engineering</strong> – CGPA 8.73<br>HKBK College of Engineering (VTU)</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>CONTACT ME</h2>
+    <p>Interested in working together or hiring me? Let’s connect.</p>
+    <form style="max-width:500px;margin-top:30px;">
+      <input type="text" placeholder="Your Name" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:none;">
+      <input type="email" placeholder="Your Email" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:none;">
+      <textarea placeholder="Your Message" rows="4" style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:none;"></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:30px;">📧 <a href="mailto:hajirakulsum257@gmail.com">hajirakulsum257@gmail.com</a></p>
+    <p>📍 Bengaluru, India</p>
+     <div class="social-icons">
+  <a href="https://www.linkedin.com/in/hajira-kulsum257"
+     target="_blank"
+     aria-label="LinkedIn"
+     class="icon linkedin">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://github.com/Hajirakulsum003"
+     target="_blank"
+     aria-label="GitHub"
+     class="icon github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<!-- Font Awesome Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </section>
+  
+
+  <footer>
+    <p>HAJIRA KULSUM</p>
+    <p>© 2025 Hajira Kulsum | All rights reserved.</p>
+  </footer>
+
+<script>
+  const sections = document.querySelectorAll('section');
+  const reveal = () => {
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) sec.classList.add('show');
+    });
+  };
+  window.addEventListener('scroll', reveal);
+  reveal();
+</script>
+</body>
+</html>
+
